@@ -10,7 +10,7 @@ def exit_program():
 def project_list():
     projects = project_management.get_all_projects()
     for project in projects:
-        print(f"Project name: {project.project_name}, Description: {project.description}")
+        print(f"Project name: {project.project_name}, Description: {project.description}, Start date: {project.start_date}, End date: {project.end_date}")
 
 def find_project_by_id(): 
     id = input("Enter the project's id : ")
